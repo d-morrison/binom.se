@@ -95,12 +95,12 @@
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">xlab</a></span><span class="op">(</span><span class="st">"Sample size"</span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">plot1</span> <span class="op">+</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_continuous.html" class="external-link">scale_y_continuous</a></span><span class="op">(</span>labels <span class="op">=</span> <span class="fu">scales</span><span class="fu">::</span><span class="fu"><a href="https://scales.r-lib.org/reference/percent_format.html" class="external-link">percent_format</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
-<p><img src="binom-se_files/figure-html/unnamed-chunk-2-1.png" width="700"></p>
+<p><img src="binom-se_files/figure-html/unnamed-chunk-2-1.png" width="576"></p>
 <p>A logarithmic y-axis helps us identify cutoffs for desired levels of precision:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span></span>
 <span><span class="va">plot1</span> <span class="op">+</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_continuous.html" class="external-link">scale_y_continuous</a></span><span class="op">(</span>labels <span class="op">=</span> <span class="fu">scales</span><span class="fu">::</span><span class="fu"><a href="https://scales.r-lib.org/reference/percent_format.html" class="external-link">percent_format</a></span><span class="op">(</span><span class="op">)</span>, trans <span class="op">=</span> <span class="st">"log10"</span><span class="op">)</span></span></code></pre></div>
-<p><img src="binom-se_files/figure-html/unnamed-chunk-3-1.png" width="700"></p>
+<p><img src="binom-se_files/figure-html/unnamed-chunk-3-1.png" width="576"></p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">binom.SEs</span><span class="op">(</span>n <span class="op">=</span> <span class="fl">2500</span>, p <span class="op">=</span> <span class="fl">.5</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] 0.01</span></span></code></pre></div>
