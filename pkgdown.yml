@@ -1,0 +1,10 @@
+pandoc: 2.14.2
+pkgdown: 2.0.6
+pkgdown_sha: ~
+articles:
+  binom-se: binom-se.html
+last_built: 2022-08-22T23:22Z
+urls:
+  reference: https://d-morrison.github.io/binom.se/reference
+  article: https://d-morrison.github.io/binom.se/articles
+
