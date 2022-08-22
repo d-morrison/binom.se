@@ -1,0 +1,26 @@
+---
+title: "binom-se"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{binom-se}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(binom.se)
+```
+
+```{r}
+
+plot(function(x) binom.se(n = 100), xlim = c(0,10000))
+
+```
+
